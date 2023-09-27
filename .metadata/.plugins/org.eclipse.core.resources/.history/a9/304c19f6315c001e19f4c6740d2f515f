@@ -1,5 +1,0 @@
-package java2prj1.test;
-
-public interface CalculatorI {
-
-}

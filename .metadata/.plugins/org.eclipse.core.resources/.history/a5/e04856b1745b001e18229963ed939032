@@ -1,5 +1,0 @@
-
-
-public interface Volkswagen {
-	public String including(Object son);
-}
