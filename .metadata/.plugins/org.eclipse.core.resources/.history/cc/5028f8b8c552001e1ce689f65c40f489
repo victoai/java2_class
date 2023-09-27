@@ -1,0 +1,41 @@
+package lamdaPrj;
+
+public class Test3 {
+
+    public static void main(String[] args) {
+
+        ArrayList<Student> arrys = new ArrayList<>();
+        Student a = new Student("김길동", "하남시");
+        Student b = new Student("강길동", "부산시");
+        Student c = new Student("나길동", "제주도");
+        arrys.add(a);
+        arrys.add(b);
+        arrys.add(c);
+
+        // 정렬
+        Collections.sort(arrys);
+
+        // 메서드 참조로 변경
+        Collections.sort(arrys, Comparator.comparing(Student::getAddress));
+
+    }
+}
+
+class Student implements Comparable<Student> {
+    private String name;
+    private String address;
+
+    public Student(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public int compareTo(Student other) {
+        return this.name.compareTo(other.name);
+    }
+}

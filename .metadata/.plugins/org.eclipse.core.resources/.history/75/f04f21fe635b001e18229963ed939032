@@ -1,0 +1,13 @@
+package java2prj1.generic;
+
+public class GListTest {
+
+	public static void main(String[] args) {
+		 
+		
+		
+		GList list = new GList();
+
+	}
+
+}

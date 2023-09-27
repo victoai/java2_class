@@ -1,0 +1,10 @@
+package old.sort;
+
+public class ArrayList_Foreach {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

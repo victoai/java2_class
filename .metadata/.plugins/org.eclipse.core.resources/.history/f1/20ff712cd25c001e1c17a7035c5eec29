@@ -1,0 +1,23 @@
+package java2prj1.day3.lamda;
+
+import java.util.ArrayList;
+
+public class Tetst2 {
+
+	public static void main(String[] args) {
+		 
+		
+		
+		ArrayList<String> list = new ArrayList<>();
+		
+		
+		
+		
+		
+	 
+		
+		
+
+	}
+
+}

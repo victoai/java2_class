@@ -1,0 +1,5 @@
+package old.genericPrj.src.generic;
+
+public class Cat  extends Animal{
+
+}

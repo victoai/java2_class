@@ -1,0 +1,52 @@
+package old.sort;
+
+import java.util.Comparator;
+
+public class MyArraysT  {
+	
+	 
+	// 제네릭매서드 
+	public static <T> void sort(T[] arr) {
+		
+		for( int i=0;i< arr.length-1; i++) {
+			for( int j=i+1; j< arr.length ;j++) {
+				
+				Comparable<T>  m  =(Comparable ) arr[i];
+				if( m.compareTo(arr[j]) >0) {
+					
+					
+				}
+			 
+			}
+		}
+		
+	}
+	
+	public static<T> void sort(Object[] arr , Comparator<T>  c) {
+		
+		
+	}
+	
+	
+	///
+	 public static void main(String[] args) {
+		 
+		 	Student[] arrs = new Student[3];
+			
+		    Student a = new Student("하길동", "하남시");
+	        Student b = new Student("강길동", "부산시");
+	        Student c = new Student("나길동", "제주도");
+	        
+	        
+	        arrs[0]= a;
+	        arrs[1]=b;
+	        arrs[2]=c;
+	        
+	        
+	        MyArraysT.sort(arrs);
+		 
+		 
+		
+	}
+
+}
